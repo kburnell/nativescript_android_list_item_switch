@@ -1,7 +1,7 @@
 <Page xmlns="http://schemas.nativescript.org/tns.xsd" loaded="onLoaded">
   <StackLayout>
     <Label text="List of Things" class="title"/>
-    <ListView items="{{ things }}" itemTap="listItemTap">
+    <ListView items="{{ things }}" itemTap="thingListItemTap">
         <ListView.itemTemplate>
             <GridLayout class="list-item" columns="6*, 4*">
                 <Label col="0" class="thing-name" text="{{ name }}"/>

@@ -15,7 +15,7 @@ export function onLoaded(args: EventData) {
     page.bindingContext = viewModel;
 }
 
-export function listItemTap(args: any) {
+export function thingListItemTap(args: any) {
     let thing = <ThingModel>args.view.bindingContext;
     dialogs.alert("You clicked: " + thing.name);
 }
